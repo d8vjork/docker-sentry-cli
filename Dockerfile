@@ -1,5 +1,5 @@
-ARG TARGETPLATFORM
 FROM alpine:3.14
+ARG TARGETPLATFORM
 
 RUN apk add --no-cache ca-certificates
 
