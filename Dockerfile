@@ -7,7 +7,7 @@ RUN export ARCH=$(case ${TARGETPLATFORM:-linux/arm64} in \
     "linux/arm64")   echo "aarch64" ;; \
     *)               echo ""        ;; esac); \
     curl -L https://github.com/getsentry/sentry-cli/releases/latest/download/sentry-cli-Linux-${ARCH} > /tmp/sentry-cli; \
-    chmod +x /bin/sentry-cli
+    chmod +x /tmp/sentry-cli
 
 FROM alpine:3.14
 
