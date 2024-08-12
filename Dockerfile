@@ -9,7 +9,7 @@ RUN export ARCH=$(case ${TARGETPLATFORM:-linux/arm64} in \
     curl -L https://github.com/getsentry/sentry-cli/releases/latest/download/sentry-cli-Linux-${ARCH} > /tmp/sentry-cli; \
     chmod +x /tmp/sentry-cli
 
-FROM alpine:3.14
+FROM alpine:3.20
 
 RUN apk add --no-cache ca-certificates
 
